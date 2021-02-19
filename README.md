@@ -30,20 +30,20 @@ training folder: (where training_set is located)
 
 ~1500 frames in each category
 
-~1500 x 101 = 151500 total frames
+~1500 x 101 = 1,51,500 total frames
 
 testing folder: (where testing_set is located)
 
 ~150 frames in each category
 
-~150 x 101 = 15150 total frames
+~150 x 101 = 15,150 total frames
 
 
-frames in training_set = 151500
+frames in training_set = 1,51,500
 
 frames validation set = 20% of training set (30300 frames)
 
-frames in testing_set = 15150 (10% of training set)
+frames in testing_set = 15,150 (10% of training set)
 
 
 # Model Analysis:
@@ -72,49 +72,27 @@ ResNet50, ResNet101, ResNet152, ResNet50V2, ResNet101V2 and ResNet152V2 all of t
 
 # Required Parameters
 
-Actual Dataset Path
-
 dataset = "UCF-101/"
-
-After Combining all videos of the Dataset, the recreated Dataset Path
 
 dataset2 = "dataset/"
 
-Training Path
-
 train_path = "training_set/"
-
-Testing path
 
 test_path = "testing_set/"
 
-Total number of frames to be extracted from a single category
-
 no_of_frames = 1650
-
-Number of epochs
 
 epochs = 20
 
-Batch size
-
 batch_size = 32
-
-Number of classes/categories (101)
 
 n_classes = 101
 
-Optimizer Used
-
 optimizer = "Adam"
 
-Loss Metric used for every model is one and same
-
 loss_metric = "categorical_crossentropy"
-
-Softmax function is used for last layer
 
 last_layer_activation_function = "softmax"
 
 
-input shape of ResNet50, ResNet101, ResNet152, ResNet50V2, ResNet101V2, ResNet152V2, MobileNet and MobileNetV2 are all the same and that is: (224, 224, 3) => [image height, image width and number of channels]
+input shape of ResNet50, ResNet101, ResNet152, ResNet50V2, ResNet101V2, ResNet152V2, MobileNet and MobileNetV2 are all the same and that is: (224, 224, 3) = [image height, image width and number of channels]
